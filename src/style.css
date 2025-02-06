@@ -52,3 +52,7 @@ header p {
 .row {
   margin: 30px;
 }
+
+.balloons {
+  justify-content: center;
+}
