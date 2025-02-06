@@ -1,0 +1,48 @@
+header {
+  background-color: rgb(233, 58, 58);
+  text-align: center;
+  padding: 20px 0px 10px 0px;
+  color: black;
+  margin-bottom: 0px;
+}
+
+header p {
+  font-size: 25px;
+}
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: thistle;
+}
+
+.columns {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+
+.text {
+  padding-top: 100px;
+}
+
+.letter {
+  margin: 0 auto;
+  padding: 0px;
+  width: 400px;
+  padding: 50px 50px 20px 50px;
+}
+
+.letter:hover {
+  cursor: pointer;
+  transform: scale(1, 1);
+}
+
+.fingers-love {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  width: 150px;
+  margin: 0 auto;
+}
