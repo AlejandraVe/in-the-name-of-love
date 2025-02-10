@@ -1,5 +1,5 @@
 header {
-  background-color: rgb(233, 58, 58);
+  background-color: rgb(159, 23, 23);
   text-align: center;
   padding: 20px 0px 10px 0px;
   color: black;
@@ -56,7 +56,7 @@ header p {
   border: 2px solid black;
   border-radius: 10px;
   margin-left: 50px;
-  background-color: rgb(159, 23, 23);
+  background-color: rgb(236, 123, 123);
   color: white;
   padding: 10px 0px;
 }
