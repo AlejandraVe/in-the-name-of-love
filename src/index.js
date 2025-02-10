@@ -1,5 +1,4 @@
 function displayPoem(response) {
-  console.log(response.data.answer);
   let poemElement = document.querySelector("#poem-element");
 
   poemElement.classList.remove("hidden");
@@ -23,15 +22,56 @@ function generatePoem() {
   axios.get(apiUrl).then(displayPoem);
 }
 
-function removeBalloon(event, balloonElement) {
+function removeBalloonOne(event) {
   event.preventDefault();
-
-  balloonElement.classList.add("hidden");
-
+  balloonElementOne.classList.add("hidden");
   generatePoem();
 }
 
-let balloonElementOne = document.querySelector("#balloon");
-let ballonElementTwo = document.querySelector("#balloon-2");
-balloonElementOne.addEventListener("click", removeBalloon, balloonElementOne);
-ballonElementTwo.addEventListener("click", removeBalloon, ballonElementTwo);
+function removeBalloonTwo(event) {
+  event.preventDefault();
+  balloonElementTwo.classList.add("hidden");
+  generatePoem();
+}
+
+function removeBalloonThree(event) {
+  event.preventDefault();
+  balloonElementThree.classList.add("hidden");
+  generatePoem();
+}
+
+function removeBalloonFour(event) {
+  event.preventDefault();
+  balloonElementFour.classList.add("hidden");
+  generatePoem();
+}
+
+function removeBalloonFive(event) {
+  event.preventDefault();
+  balloonElementFive.classList.add("hidden");
+  generatePoem();
+}
+
+function removeBalloonSix(event) {
+  event.preventDefault();
+  balloonElementSix.classList.add("hidden");
+  generatePoem();
+}
+
+let balloonElementOne = document.querySelector("#balloon-1");
+let balloonElementTwo = document.querySelector("#balloon-2");
+let balloonElementThree = document.querySelector("#balloon-3");
+let balloonElementFour = document.querySelector("#balloon-4");
+let balloonElementFive = document.querySelector("#balloon-5");
+let balloonElementSix = document.querySelector("#balloon-6");
+
+balloonElementOne.addEventListener("click", removeBalloonOne);
+balloonElementTwo.addEventListener("click", removeBalloonTwo);
+balloonElementThree.addEventListener("click", removeBalloonThree);
+balloonElementFour.addEventListener("click", removeBalloonFour);
+balloonElementFive.addEventListener("click", removeBalloonFive);
+balloonElementSix.addEventListener("click", removeBalloonSix);
+
+/*balloons.forEach((element) => {
+  element.addEventListener("click", removeBalloon);
+});*/
