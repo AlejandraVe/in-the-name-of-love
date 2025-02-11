@@ -22,42 +22,6 @@ function generatePoem() {
   axios.get(apiUrl).then(displayPoem);
 }
 
-function removeBalloonOne(event) {
-  event.preventDefault();
-  balloonElementOne.classList.add("hidden");
-  generatePoem();
-}
-
-function removeBalloonTwo(event) {
-  event.preventDefault();
-  balloonElementTwo.classList.add("hidden");
-  generatePoem();
-}
-
-function removeBalloonThree(event) {
-  event.preventDefault();
-  balloonElementThree.classList.add("hidden");
-  generatePoem();
-}
-
-function removeBalloonFour(event) {
-  event.preventDefault();
-  balloonElementFour.classList.add("hidden");
-  generatePoem();
-}
-
-function removeBalloonFive(event) {
-  event.preventDefault();
-  balloonElementFive.classList.add("hidden");
-  generatePoem();
-}
-
-function removeBalloonSix(event) {
-  event.preventDefault();
-  balloonElementSix.classList.add("hidden");
-  generatePoem();
-}
-
 let balloonElementOne = document.querySelector("#balloon-1");
 let balloonElementTwo = document.querySelector("#balloon-2");
 let balloonElementThree = document.querySelector("#balloon-3");
@@ -65,13 +29,29 @@ let balloonElementFour = document.querySelector("#balloon-4");
 let balloonElementFive = document.querySelector("#balloon-5");
 let balloonElementSix = document.querySelector("#balloon-6");
 
-balloonElementOne.addEventListener("click", removeBalloonOne);
-balloonElementTwo.addEventListener("click", removeBalloonTwo);
-balloonElementThree.addEventListener("click", removeBalloonThree);
-balloonElementFour.addEventListener("click", removeBalloonFour);
-balloonElementFive.addEventListener("click", removeBalloonFive);
-balloonElementSix.addEventListener("click", removeBalloonSix);
+let balloons = [
+  balloonElementOne,
+  balloonElementTwo,
+  balloonElementThree,
+  balloonElementFour,
+  balloonElementFive,
+  balloonElementSix,
+];
 
-/*balloons.forEach((element) => {
-  element.addEventListener("click", removeBalloon);
-});*/
+let balloonsList = document.querySelector("#balloons");
+balloonsList.addEventListener("click", (event) => {
+  const clickedElement = event.target.closest("dotlottie-player");
+
+  if (clickedElement) {
+    const balloonId = clickedElement.id;
+    const balloonNumber = balloonId.split("-")[1];
+
+    console.log(balloonId);
+    console.log(balloonNumber);
+
+    const balloonToDissappear = document.getElementById(`${balloonId}`);
+
+    balloonToDissappear.classList.add("hidden");
+    generatePoem();
+  }
+});
