@@ -96,8 +96,9 @@ header p {
   }
 
   .letter {
-    max-width: 280px;
+    max-width: 200px;
     margin: 0px;
+    padding: 0px;
   }
 
   .letter:hover {
@@ -112,6 +113,17 @@ header p {
 
   .row {
     grid-template-columns: 1fr;
+  }
+
+  .intro,
+  .instructions {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #poem-element {
+    margin: 0px;
+    padding: 10px;
   }
 
   .balloons {
