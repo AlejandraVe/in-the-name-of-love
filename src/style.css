@@ -139,4 +139,12 @@ header p {
     margin: 0px;
     padding: 0px;
   }
+
+  .container {
+    font-size: 18px;
+  }
+
+  #poem-element {
+    font-size: 15px;
+  }
 }
