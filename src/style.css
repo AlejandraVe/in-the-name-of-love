@@ -16,6 +16,10 @@ header p {
   background-color: thistle;
 }
 
+.body-open-letter {
+  background-color: rgb(255, 231, 229);
+}
+
 .columns {
   display: flex;
   list-style-type: none;
@@ -45,7 +49,7 @@ header p {
   text-align: center;
   margin: 0 auto;
   max-width: 70%;
-  background-color: rgb(234, 234, 234);
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
   font-size: 20px;
@@ -54,11 +58,11 @@ header p {
 }
 
 #poem-element {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 231, 229);
   border-radius: 10px;
   margin-left: 50px;
-  background-color: rgb(236, 123, 123);
-  color: white;
+  background-color: rgb(255, 231, 229);
+  color: rgb(159, 23, 23);
   padding: 10px 0px;
 }
 
@@ -68,6 +72,9 @@ header p {
 
 .row {
   margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
 }
 
 .balloons {
@@ -81,4 +88,43 @@ header p {
   cursor: pointer;
   transform: scale(1.1, 1.1);
   transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .columns {
+    display: inline;
+  }
+
+  .letter {
+    max-width: 280px;
+    margin: 0px;
+  }
+
+  .letter:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: all 200ms ease-in-out;
+  }
+
+  .text {
+    margin: 0px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .balloons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .balloons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    padding: 0px;
+  }
 }

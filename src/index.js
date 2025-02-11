@@ -14,8 +14,8 @@ function displayPoem(response) {
 
 function generatePoem() {
   let context =
-    "I need a short poem about friendship, not longer than 4 lines. Separate each line with <br />. Do not include a title to the poem. Make sure to sign at the end as Your Dear Friend inside a <strong> element. Just write the poem";
-  let prompt = "Write a short poem";
+    "Necesito un poema pequeño sobre la amistad, no más largo de 4 líneas. Separa cada línea con <br />. No incluyas un título. Asegúrate de firmar al final como Tu Querido Amigo dentro de un <strong>. Solo escribe el poema.";
+  let prompt = "Escribe un poema corto";
   let apiKey = "131b90447daa3e3cfco5aa3tc6e2b482";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
