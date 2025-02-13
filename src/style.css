@@ -1,150 +1,151 @@
 header {
-  background-color: rgb(194, 24, 7);
-  text-align: center;
-  padding: 20px 0px 10px 0px;
-  color: rgb(255, 255, 255);
-  margin-bottom: 0px;
-}
-
-header p {
-  font-size: 25px;
-}
-
-.body-index {
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgb(255, 192, 203); 
-}
-
-.body-open-letter {
-  background-color: rgb(252, 228, 236);
-}
-
-.columns {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  flex: 1;
-  align-items: center;
-}
-
-.text {
-  padding-top: 100px;
-}
-
-.letter {
-  margin: 0 auto;
-  padding: 0px;
-  width: 400px;
-  padding: 50px 50px 20px 50px;
-}
-
-.letter:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
-  transition: all 200ms ease-in-out;
-}
-
-.container {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 70%;
-  background-color: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 20px;
-  box-shadow: 2px 10px 30px rgba(194, 24, 7, 0.6);
-  margin-bottom: 60px;
-}
-
-#poem-element {
-  border: 2px solid rgb(255, 192, 203);
-  border-radius: 10px;
-  margin-left: 50px;
-  background-color:rgb(252, 228, 236); 
-  color: rgb(233, 30, 99);
-  padding: 10px 0px;
-}
-
-.hidden {
-  display: none;
-}
-
-.row {
-  margin: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
-}
-
-.balloons {
-  display: flex;
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-}
-
-.balloon:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
-  transition: all 200ms ease-in-out;
-}
-
-@media (max-width: 800px) {
+	background-color: rgb(194, 24, 7);
+	text-align: center;
+	padding: 20px 0px 10px 0px;
+	color: rgb(255, 255, 255);
+	margin-bottom: 0px;
+  }
+  
+  header p {
+	font-size: 25px;
+  }
+  
+  .body-index {
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgb(255, 192, 203); 
+  }
+  
+  .body-open-letter {
+	background-color: rgb(252, 228, 236);
+  }
+  
   .columns {
-    display: inline;
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	flex: 1;
+	align-items: center;
   }
-
-  .letter {
-    max-width: 200px;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .letter:hover {
-    cursor: pointer;
-    transform: scale(1.1, 1.1);
-    transition: all 200ms ease-in-out;
-  }
-
+  
   .text {
-    margin: 0px;
+	padding-top: 100px;
   }
-
-  .row {
-    grid-template-columns: 1fr;
+  
+  .letter {
+	margin: 0 auto;
+	padding: 0px;
+	width: 400px;
+	padding: 50px 50px 20px 50px;
   }
-
-  .intro,
-  .instructions {
-    padding: 0px;
-    margin: 0px;
+  
+  .letter:hover {
+	cursor: pointer;
+	transform: scale(1.1, 1.1);
+	transition: all 200ms ease-in-out;
   }
-
-  #poem-element {
-    margin: 0px;
-    padding: 10px;
-  }
-
-  .balloons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 500px) {
-  .balloons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0px;
-    padding: 0px;
-  }
-
+  
   .container {
-    font-size: 18px;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 70%;
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	box-shadow: 2px 10px 30px rgba(194, 24, 7, 0.6);
+	margin-bottom: 60px;
   }
-
+  
   #poem-element {
-    font-size: 15px;
+	border: 2px solid rgb(255, 192, 203);
+	border-radius: 10px;
+	margin-left: 50px;
+	background-color:rgb(252, 228, 236); 
+	color: rgb(233, 30, 99);
+	padding: 10px 0px;
   }
-}
+  
+  .hidden {
+	display: none;
+  }
+  
+  .row {
+	margin: 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 15px;
+  }
+  
+  .balloons {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	justify-content: center;
+  }
+  
+  .balloon:hover {
+	cursor: pointer;
+	transform: scale(1.1, 1.1);
+	transition: all 200ms ease-in-out;
+  }
+  
+  @media (max-width: 800px) {
+	.columns {
+	  display: inline;
+	}
+  
+	.letter {
+	  max-width: 200px;
+	  margin: 0px;
+	  padding: 0px;
+	}
+  
+	.letter:hover {
+	  cursor: pointer;
+	  transform: scale(1.1, 1.1);
+	  transition: all 200ms ease-in-out;
+	}
+  
+	.text {
+	  margin: 0px;
+	}
+  
+	.row {
+	  grid-template-columns: 1fr;
+	}
+  
+	.intro,
+	.instructions {
+	  padding: 0px;
+	  margin: 0px;
+	}
+  
+	#poem-element {
+	  margin: 0px;
+	  padding: 10px;
+	}
+  
+	.balloons {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.balloons {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  margin: 0px;
+	  padding: 0px;
+	}
+  
+	.container {
+	  font-size: 18px;
+	}
+  
+	#poem-element {
+	  font-size: 15px;
+	}
+  }
+  
