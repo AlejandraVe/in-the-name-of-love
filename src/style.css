@@ -57,10 +57,13 @@ header p {
 #poem-element {
   border: 2px solid rgb(255, 192, 203);
   border-radius: 10px;
-  margin-left: 50px;
+  margin: 0 auto;
   background-color: rgb(252, 228, 236);
   color: rgb(233, 30, 99);
   padding: 10px 0px;
+  max-width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .hidden {
@@ -70,7 +73,7 @@ header p {
 .row {
   margin: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 15px;
 }
 
@@ -119,8 +122,8 @@ header p {
   }
 
   #poem-element {
-    margin: 0px;
-    padding: 10px;
+    margin: 20px;
+    max-width: 100%;
   }
 
   .balloons {
@@ -143,5 +146,7 @@ header p {
 
   #poem-element {
     font-size: 12px;
+    max-width: 100%;
+    margin: 20px;
   }
 }
